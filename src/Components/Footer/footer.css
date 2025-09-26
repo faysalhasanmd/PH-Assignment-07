@@ -1,0 +1,11 @@
+.fontBold {
+  font-size: bold;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.gray {
+  color: gray;
+}
+.gap {
+  line-height: 34px;
+}

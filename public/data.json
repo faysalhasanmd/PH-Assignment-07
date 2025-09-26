@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login issue",
+    "description": "User cannot log into the system with correct credentials.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-20T09:15:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Payment not processed",
+    "description": "Customer payment failed but amount deducted from bank account.",
+    "customer": "Alice Smith",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-09-21T11:45:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Slow website performance",
+    "description": "Pages are loading very slowly during peak hours.",
+    "customer": "Michael Johnson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-19T14:30:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Password reset not working",
+    "description": "Password reset link expired immediately after generation.",
+    "customer": "Sophia Lee",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2025-09-18T17:00:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Mobile app crash",
+    "description": "App crashes when user tries to upload profile picture.",
+    "customer": "David Brown",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-17T10:20:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Invoice not generated",
+    "description": "Customer did not receive invoice after purchase.",
+    "customer": "Emma Wilson",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-15T12:40:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Email notification delay",
+    "description": "Order confirmation emails taking more than 2 hours.",
+    "customer": "Oliver Davis",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-14T09:50:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Security vulnerability",
+    "description": "Potential XSS vulnerability found on search page.",
+    "customer": "Liam Miller",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-13T15:25:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Feature request: Dark mode",
+    "description": "Customer requested dark mode feature for dashboard.",
+    "customer": "Charlotte Taylor",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-12T08:10:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Report export issue",
+    "description": "Reports are not downloading in PDF format.",
+    "customer": "James Anderson",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2025-09-11T13:55:00Z"
+  },
+  {
+    "id": 11,
+    "title": "System downtime",
+    "description": "The entire platform was down for 10 minutes.",
+    "customer": "Amelia Thomas",
+    "priority": "Critical",
+    "status": "Closed",
+    "createdAt": "2025-09-10T07:00:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Search not working",
+    "description": "Search bar returns no results even with correct keyword.",
+    "customer": "Henry White",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-09-09T18:35:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Data sync error",
+    "description": "Customer data not syncing across devices.",
+    "customer": "Evelyn Martin",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-08T21:15:00Z"
+  },
+  {
+    "id": 14,
+    "title": "UI glitch on dashboard",
+    "description": "Dashboard widgets overlap when resizing browser.",
+    "customer": "William Garcia",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-07T16:25:00Z"
+  },
+  {
+    "id": 15,
+    "title": "File upload limit issue",
+    "description": "System not allowing files larger than 2MB though limit is 5MB.",
+    "customer": "Mia Martinez",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-09-06T19:45:00Z"
+  }
+]
