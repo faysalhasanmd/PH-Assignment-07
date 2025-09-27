@@ -7,7 +7,7 @@ import mailImg from "../../assets/f.png";
 
 const Footer = () => {
   return (
-    <div className="w-[1200px] res mx-auto bg-black width center text-white p-10 flex justify-between mt-8">
+    <div className="max-w-[1200px] res mx-auto bg-black width rounded-t-2xl center text-white p-10 flex justify-between mt-8">
       <div className="grid grid-cols-5 items-center footer">
         <div className="flex flex-col small items-center">
           <h1 className="fontBold">CS Ticket System</h1>

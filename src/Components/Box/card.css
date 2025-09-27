@@ -1,22 +1,11 @@
-.bg-img {
-  background-image: url("../../assets/vector1.png"),
-    linear-gradient(180deg, #a740ff, #8504de);
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
-}
-
-.bg-img1 {
-  background-image: url("../../assets/vector1.png"),
-    linear-gradient(90deg, #008938, #00c54f);
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
-}
-
 @media screen and (max-width: 576px) {
   .bg-img,
   .bg-img1 {
     height: 180px;
+    width: 100%;
+  }
+  .display {
+    display: flex;
+    flex-direction: column;
   }
 }
