@@ -3,7 +3,7 @@
     height: 150px;
     width: 90%;
     margin: 0 auto;
-    font-size: small;
+    font-size: 12px;
   }
   .reverse {
     display: flex;

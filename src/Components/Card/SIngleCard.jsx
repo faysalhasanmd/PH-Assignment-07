@@ -30,19 +30,19 @@ const SIngleCard = ({ person, data, setData, setSelectedPerson }) => {
   return (
     <div onClick={() => handleCard(person)}>
       <div className=" flex flex-col nav justify-between gap-1 rounded-xl min-h-[80px] w-[430px]">
-        <div className="p-3.5 rounded-[7px] bg-white card">
+        <div className="p-3.5 rounded-[7px] bg-white ">
           <div className="flex justify-between items-start mt-2">
             <h1 className="font-semibold ">{person.title}</h1>
             <div
               className={`${
                 person.status === "In Progress"
-                  ? "bg-yellow-500 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
+                  ? "bg-yellow-200 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
                   : person.status === "Closed"
-                  ? "bg-blue-500 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
+                  ? "bg-blue-200 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
                   : person.status === "Resolved"
-                  ? "bg-purple-500 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
+                  ? "bg-purple-200 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
                   : person.status === "Open"
-                  ? "bg-green-500 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
+                  ? "bg-green-200 text-gray-800 font-semibold px-2.5 py-1 rounded-2xl flex items-center gap-1 text-[14px]"
                   : ""
               }`}
             >
