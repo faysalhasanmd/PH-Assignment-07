@@ -4,8 +4,8 @@ import "./card.css";
 const Box = ({ resolved, selectedPerson }) => {
   // console.log(resolved);
   return (
-    <div className="w-[1200px] box mx-auto mt-6 bg-[#f5f5f5]">
-      <div className="flex box gap-7">
+    <div className="max-w-[1200px] px-4  mx-auto mt-6 bg-[#f5f5f5]">
+      <div className="flex flex-wrap box gap-7">
         <div className="h-[200px] flex one bg-img flex-col text-center justify-center rounded-2xl w-[590px] text-white">
           <h1 className="text-3xl font-bold">In Progress</h1>
           <span className="text-3xl font-bold">{selectedPerson.length}</span>

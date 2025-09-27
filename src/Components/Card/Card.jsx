@@ -15,10 +15,10 @@ const Card = ({
   console.log(selectedPerson);
   // ---------------//
   return (
-    <div className="w-[1200px] mx-auto mt-9">
+    <div className="max-w-[1200px] mx-auto mt-9 px-4">
       <h1 className="font-bold text-3xl mb-3">Customer Ticket</h1>
-      <div className="flex reverse  gap-4">
-        <div className="grid nav center grid-cols-2 gap-4">
+      <div className="flex gap-4 reverse">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:w-full sm:justify-center">
           {data.map((person) => (
             <SIngleCard
               key={person.id}
