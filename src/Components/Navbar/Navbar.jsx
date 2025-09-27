@@ -4,19 +4,31 @@ import "./navStyle.css";
 const Navbar = () => {
   return (
     <div className="shadow-sm bg-white">
-      <div className="w-[1200px] mx-auto flex items-center justify-between p-3">
-        <h1 className="font-bold">CS — Ticket System</h1>
-        {/* <div> */}
-        <div className="navbar-end">
-          <ul className=" flex gap-5 mr-5">
-            <li className="font-size text-gray-700">Home</li>
-            <li className="font-size text-gray-700">FAQ</li>
-            <li className="font-size text-gray-700">Changelog</li>
-            <li className="font-size text-gray-700">Blog</li>
-            <li className="font-size text-gray-700">Download</li>
-            <li className="font-size text-gray-700">Contact</li>
+      <div className="w-[1200px] mx-auto flex nav items-center justify-between p-3">
+        <h1 className="font-bold text-3xl mb-2 sm:mb-0 sm:text-2xl">
+          CS — Ticket System
+        </h1>
+        <div className="navbar-end nav">
+          <ul className="flex gap-2 md:gap-5 nav mr-5">
+            <a href="">
+              <li className="font-size text-gray-700">Home</li>
+            </a>
+            <a href="">
+              <li className="font-size text-gray-700">FAQ</li>
+            </a>
+            <a href="">
+              <li className="font-size text-gray-700">Changelog</li>
+            </a>
+            <a href="">
+              <li className="font-size text-gray-700">Blog</li>
+            </a>
+            <a href="">
+              <li className="font-size text-gray-700">Download</li>
+            </a>
+            <a href="">
+              <li className="font-size text-gray-700">Contact</li>
+            </a>
           </ul>
-          {/* </div> */}
           <div>
             <button className="btn bg-gradient-to-r from-purple-700 to-purple-500 text-white text-end">
               + New Ticket

@@ -1,8 +1,9 @@
 import React from "react";
+import "./copy.css";
 
 const CopyRight = () => {
   return (
-    <div className="w-[1200px] mx-auto border border-t-gray-700 p-7 bg-black text-white text-center">
+    <div className="w-[1200px] copy mx-auto border border-t-gray-700 p-7 bg-black text-white text-center">
       <h1 className="text-[16px]">
         © 2025 CS—Ticket System. All rights reserved.
       </h1>

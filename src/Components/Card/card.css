@@ -1,0 +1,20 @@
+@media screen and (max-width: 576px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+    margin-top: 14px;
+    /* align-items: center; */
+  }
+  .card {
+    height: 150px;
+    width: 90%;
+  }
+  .center {
+    align-items: center;
+  }
+}

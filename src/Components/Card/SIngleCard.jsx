@@ -7,10 +7,10 @@ import green from "../../assets/greendot.png";
 import purple from "../../assets/pupledot.png";
 import TaskStatus from "../TaskStatus/TaskStatus";
 import toast from "react-hot-toast";
+import "./card.css";
 
 const SIngleCard = ({ person, data, setData, setSelectedPerson }) => {
   const handleCard = (value) => {
-    // console.log("hello", person);
     setSelectedPerson((val) => {
       if (val.some((p) => p.id === value.id)) {
         toast.error("Same Issue Not Added..!!");
@@ -26,12 +26,11 @@ const SIngleCard = ({ person, data, setData, setSelectedPerson }) => {
       return [...data, value];
     });
   };
-
   // console.log(person);
   return (
     <div onClick={() => handleCard(person)}>
-      <div className=" flex flex-col justify-between gap-1 rounded-xl min-h-[80px] w-[430px]">
-        <div className="p-3.5 rounded-[7px] bg-white ">
+      <div className=" flex flex-col nav justify-between gap-1 rounded-xl min-h-[80px] w-[430px]">
+        <div className="p-3.5 rounded-[7px] bg-white card">
           <div className="flex justify-between items-start mt-2">
             <h1 className="font-semibold ">{person.title}</h1>
             <div

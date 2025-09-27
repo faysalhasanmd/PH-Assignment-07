@@ -9,3 +9,17 @@
 .gap {
   line-height: 34px;
 }
+
+@media screen and (max-width: 576px) {
+  .width {
+    width: 100%;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+  }
+  .center {
+    align-items: center;
+  }
+}

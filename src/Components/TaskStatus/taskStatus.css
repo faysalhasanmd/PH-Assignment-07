@@ -1,0 +1,12 @@
+@media screen and (max-width: 576px) {
+  .task {
+    width: 450px;
+    align-items: center;
+  }
+  .centerItem {
+    align-items: center;
+  }
+  .margin {
+    margin-left: 24px;
+  }
+}

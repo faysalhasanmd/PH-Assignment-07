@@ -3,14 +3,22 @@
     linear-gradient(180deg, #a740ff, #8504de);
   background-repeat: no-repeat;
   background-position: top left;
-  color: white;
   background-size: contain;
 }
 .bg-img1 {
   background-image: url("../../assets/vector1.png"),
-    linear-gradient(45deg, #008938, #00c54f);
+    linear-gradient(90deg, #008938, #00c54f);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
-  color: white;
+}
+@media screen and (max-width: 576px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+  .one {
+    width: 450px;
+  }
 }

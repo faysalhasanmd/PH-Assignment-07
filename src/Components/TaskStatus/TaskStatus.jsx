@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import "./taskStatus.css";
 
-const TaskStatus = ({ person, setSelectedPerson, setData }) => {
+const TaskStatus = ({
+  person,
+  setSelectedPerson,
+  setData,
+  resolved,
+  setResolved,
+}) => {
   const [click, setClick] = useState([]);
-  const [resolved, setResolved] = useState([]);
 
   const removeCard = (card) => {
     if (!click.includes(card.id)) {
@@ -21,9 +27,9 @@ const TaskStatus = ({ person, setSelectedPerson, setData }) => {
   return (
     <div className="w-[300px]">
       {/* progress section */}
-      <div className="bg-white p-2.5 rounded-[10px]">
+      <div className="bg-white p-2.5 margin rounded-[10px]">
         <h1 className="font-bold mb-2">Task Status</h1>
-        <div className="px-2.5 p-2 rounded-[8px] m-2">
+        <div className="px-2.5 p-2 rounded-[8px] centerItem m-2">
           {person.length === 0 && (
             <h1 className="text-gray-400 text-center bg-[#f5f5f5] p-6 rounded-[7px] text-sm">
               No Task In Progress <br />
@@ -56,12 +62,12 @@ const TaskStatus = ({ person, setSelectedPerson, setData }) => {
       </div>
 
       {/* resolved section */}
-      <div className="bg-white p-2.5 rounded-[10px] mt-3">
+      <div className="bg-white p-2.5 margin rounded-[10px] mt-3">
         <h1 className="font-bold mb-2">Resolved</h1>
         <div className="px-2.5 p-2 rounded-[8px] m-2">
           {resolved.length === 0 && (
             <h1 className="text-gray-400 text-center bg-[#f5f5f5] p-6 rounded-[7px] text-sm">
-              No Resolved Task Yet
+              No Resolved Task
             </h1>
           )}
           {resolved.map((task) => (

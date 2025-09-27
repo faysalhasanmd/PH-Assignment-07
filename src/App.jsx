@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Box from "./Components/Box/Box";
 import Card from "./Components/Card/Card";
@@ -12,16 +12,34 @@ const fetchData = async () => {
   return res.json();
 };
 
+const fetchPromise = fetchData();
 function App() {
-  const fetchPromise = fetchData();
+  const [resolved, setResolved] = useState([]);
+  const [selectedPerson, setSelectedPerson] = useState([]);
   return (
     <>
       <Navbar></Navbar>
-      <Box></Box>
+      <Box
+        resolved={resolved}
+        setResolved={setResolved}
+        selectedPerson={selectedPerson}
+      ></Box>
       <Suspense
-        fallback={<span className="loading loading-dots loading-md"></span>}
+        fallback={
+          <div className="flex justify-center items-center mt-7">
+            <span className="loading loading-spinner text-primary"></span>
+          </div>
+        }
       >
-        {<Card fetchPromise={fetchPromise}></Card>}
+        {
+          <Card
+            fetchPromise={fetchPromise}
+            selectedPerson={selectedPerson}
+            setSelectedPerson={setSelectedPerson}
+            resolved={resolved}
+            setResolved={setResolved}
+          ></Card>
+        }
       </Suspense>
       <Footer></Footer>
       <CopyRight></CopyRight>
