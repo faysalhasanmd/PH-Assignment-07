@@ -6,7 +6,12 @@ const Navbar = () => {
     <div className="shadow-sm bg-white">
       <div className="w-[1200px] mx-auto flex nav items-center justify-between p-3">
         <h1 className="font-bold text-3xl mb-2 sm:mb-0 sm:text-2xl">
-          CS — Ticket System
+          <span className="text-purple-500">C</span>
+          <span className="text-green-500">S</span> —{" "}
+          <span className="text-purple-500">
+            Tick<span className="text-green-500">et Sys</span>
+            <span className="text-purple-500">tem</span>
+          </span>
         </h1>
         <div className="navbar-end nav">
           <ul className="flex gap-2 md:gap-5 nav mr-5">

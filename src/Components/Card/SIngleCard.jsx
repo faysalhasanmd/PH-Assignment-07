@@ -9,24 +9,25 @@ import TaskStatus from "../TaskStatus/TaskStatus";
 import toast from "react-hot-toast";
 import "./card.css";
 
-const SIngleCard = ({ person, data, setData, setSelectedPerson }) => {
+const SIngleCard = ({ person, setData, setSelectedPerson }) => {
   const handleCard = (value) => {
+    if (value.status === "Open") {
+      setData((update) =>
+        update.map((x) =>
+          x.id === value.id ? { ...x, status: "In Progress" } : x
+        )
+      );
+      toast.success("Task moved to In Progress..!!");
+    }
+
     setSelectedPerson((val) => {
       if (val.some((p) => p.id === value.id)) {
         toast.error("Same Issue Not Added..!!");
         return val;
       }
-      toast.success("Task Status Completed.!!");
       return [...val, value];
     });
-    setData((val) => {
-      if (val.some((p) => p.id === value.id)) {
-        return val;
-      }
-      return [...data, value];
-    });
   };
-  // console.log(person);
   return (
     <div onClick={() => handleCard(person)}>
       <div className=" flex flex-col nav justify-between gap-1 rounded-xl min-h-[80px] w-[430px]">
@@ -59,7 +60,6 @@ const SIngleCard = ({ person, data, setData, setSelectedPerson }) => {
                 }
                 alt=""
               />
-
               <span>{person.status}</span>
             </div>
           </div>
