@@ -26,8 +26,7 @@ const TaskStatus = ({
 
   return (
     <div className="w-[300px]">
-      {/* progress section */}
-      <div className="bg-white p-2.5 margin rounded-[10px]">
+      <div className="bg-white p-2.5 margin rounded-[10px] shadow">
         <h1 className="font-bold mb-2">Task Status</h1>
         <div className="px-2.5 p-2 rounded-[8px] centerItem m-2">
           {person.length === 0 && (
@@ -60,9 +59,7 @@ const TaskStatus = ({
           ))}
         </div>
       </div>
-
-      {/* resolved section */}
-      <div className="bg-white p-2.5 margin rounded-[10px] mt-3">
+      <div className="bg-white p-2.5 margin rounded-[10px] mt-3 shadow">
         <h1 className="font-bold mb-2">Resolved</h1>
         <div className="px-2.5 p-2 rounded-[8px] m-2">
           {resolved.length === 0 && (

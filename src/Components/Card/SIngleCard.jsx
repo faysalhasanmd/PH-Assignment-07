@@ -30,7 +30,7 @@ const SIngleCard = ({ person, setData, setSelectedPerson }) => {
   };
   return (
     <div onClick={() => handleCard(person)}>
-      <div className=" flex flex-col nav justify-between gap-1 rounded-xl min-h-[80px] w-[430px]">
+      <div className=" flex flex-col nav justify-between gap-1 rounded-xl min-h-[80px] w-[430px] shadow">
         <div className="p-3.5 rounded-[7px] bg-white ">
           <div className="flex justify-between items-start mt-2">
             <h1 className="font-semibold ">{person.title}</h1>
