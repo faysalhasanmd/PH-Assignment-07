@@ -19,7 +19,6 @@ const SIngleCard = ({ person, setData, setSelectedPerson }) => {
       );
       toast.success("Task moved to In Progress..!!");
     }
-
     setSelectedPerson((val) => {
       if (val.some((p) => p.id === value.id)) {
         toast.error("Same Issue Not Added..!!");

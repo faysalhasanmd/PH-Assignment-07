@@ -12,7 +12,7 @@ const Card = ({
 }) => {
   const recivedJson = use(fetchPromise);
   const [data, setData] = useState(recivedJson);
-  console.log(selectedPerson);
+  // console.log(selectedPerson);
   // ---------------//
   return (
     <div className="max-w-[1200px] mx-auto mt-9 px-4">

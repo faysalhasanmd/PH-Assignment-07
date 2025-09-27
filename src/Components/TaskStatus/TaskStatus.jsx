@@ -12,7 +12,6 @@ const TaskStatus = ({
   setResolved,
 }) => {
   const [click, setClick] = useState([]);
-
   const removeCard = (card) => {
     if (!click.includes(card.id)) {
       setClick((info) => [...info, card.id]);
@@ -20,10 +19,8 @@ const TaskStatus = ({
     setSelectedPerson((info) => info.filter((x) => x.id !== card.id));
     setData((info) => info.filter((x) => x.id !== card.id));
     setResolved((info) => [...info, card]);
-
     toast.success("Task Resolved!");
   };
-
   return (
     <div className="w-[300px]">
       <div className="bg-white p-2.5 margin rounded-[10px] shadow">
